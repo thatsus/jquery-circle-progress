@@ -1,86 +1,9 @@
 {
-    "name": "laravel/laravel",
-    "description": "The Laravel Framework.",
-    "keywords": ["framework", "laravel"],
-    "license": "MIT",
-    "type": "project",
-    "require": {
-        "php": ">=5.5.9",
-        "laravel/framework": "5.1.*",
-        "codeception/codeception": "^2.1",
-        "fortawesome/font-awesome": "^4.3",
-        "kwizer15/highcharts": "^4.1",
-        "kwizer15/jquery": "^2.1",
-        "twbs/bootstrap": "^3.3",
-        "kwizer15/jquery-ui": "^1.11",
-        "orangehill/iseed": "dev-master",
-        "barryvdh/laravel-ide-helper": "^2.0",
-        "rjacobsen/eloquent-model-generator": "^1.0",
-        "laravelcollective/html": "^5.1",
-        "bosnadev/repositories": "^0.8.0",
-        "rjacobsen/jquery-nestable": "1.*",
-        "rjacobsen/bootstrap-colorpicker": "1.*",
-        "thatsus/jquery-circle-progress": "1.1.3"
-    },
-    "require-dev": {
-        "fzaninotto/faker": "~1.4",
-        "mockery/mockery": "0.9.*",
-        "phpunit/phpunit": "~4.0",
-        "phpspec/phpspec": "~2.1",
-        "xethron/migrations-generator": "dev-l5",
-        "way/generators": "dev-feature/laravel-five-stable",
-        "user11001/eloquent-model-generator": "dev-master"
-    },
+    "name": “thatsus/jquery-circle-progress",
     "repositories": [
         {
-            "type": "git",
-            "url": "git@github.com:jamisonvalenta/Laravel-4-Generators.git"
+            "type": "vcs",
+            "url": “git@github.com:thatsus/jquery-circle-progress.git"
         }
-    ],
-    "autoload": {
-        "classmap": [
-            "database"
-        ],
-        "psr-4": {
-            "App\\": "app/"
-        }
-    },
-    "autoload-dev": {
-        "classmap": [
-            "tests/TestCase.php"
-        ]
-    },
-    "scripts": {
-        "post-install-cmd": [
-            "php artisan clear-compiled",
-            "php artisan ide-helper:generate",
-            "php artisan optimize",
-            "php -r \"copy('provision/config/.env.lotvantage_development', '.env');\"",
-            "php artisan key:generate",
-            "npm install",
-            "npm install gulp",
-            "gulp"
-        ],
-        "pre-update-cmd": [
-            "php artisan clear-compiled"
-        ],
-        "post-update-cmd": [
-            "php artisan clear-compiled",
-            "php artisan ide-helper:generate",
-            "php artisan optimize"
-        ],
-        "post-root-package-install": [
-            "php -r \"copy('.env.example', '.env');\"",
-            "php artisan key:generate",
-            "npm install",
-            "npm install gulp",
-            "gulp"
-        ],
-        "post-create-project-cmd": [
-            "php artisan key:generate"
-        ]
-    },
-    "config": {
-        "preferred-install": "dist"
-    }
+    ]
 }
