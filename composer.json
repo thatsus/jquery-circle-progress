@@ -1,9 +1,9 @@
 {
-    "name": “thatsus/jquery-circle-progress",
+    "name": "thatsus/jquery-circle-progress",
     "repositories": [
         {
             "type": "vcs",
-            "url": “git@github.com:thatsus/jquery-circle-progress.git"
+            "url": "git@github.com:thatsus/jquery-circle-progress.git"
         }
     ]
 }
